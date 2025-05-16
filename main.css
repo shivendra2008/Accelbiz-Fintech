@@ -340,7 +340,7 @@ h6 {
 @media (max-width: 1199px) {
   .mobile-nav-toggle {
     color: var(--nav-color);
-    font-size: 20px;
+    font-size: 28px;
     line-height: 0;
     margin-right: 10px;
     cursor: pointer;
@@ -443,7 +443,7 @@ h6 {
   .mobile-nav-active .mobile-nav-toggle {
     color: #fff;
     position: absolute;
-    font-size: 20px;
+    font-size: 32px;
     top: 15px;
     right: 15px;
     margin-right: 0;
@@ -1219,6 +1219,7 @@ section,
   background-color: var(--accent-color);
   border-color: var(--accent-color);
 }
+
 
 .features .nav-link.active h4 {
   color: var(--contrast-color);
@@ -2298,6 +2299,9 @@ section,
 
 .service-details .services-img {
   margin-bottom: 20px;
+  height: 200px;
+  width: 200px;
+  align-self: center;
 }
 
 .service-details h3 {

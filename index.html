@@ -35,6 +35,40 @@
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
 </head>
+<!-- F’in sweet Webflow Hacks -->
+<script>
+  // when the DOM is ready
+  $(document).ready(function() {
+    // get the anchor link buttons
+    const menuBtn = $('.hack15-menu-button');
+    // when each button is clicked
+    menuBtn.click(()=>{	
+      // set a short timeout before taking action
+      // so as to allow hash to be set
+      setTimeout(()=>{
+        // call removeHash function after set timeout
+        removeHash();
+      }, 5); // 5 millisecond timeout in this case
+    });
+  
+    // removeHash function
+    // uses HTML5 history API to manipulate the location bar
+    function removeHash(){
+      history.replaceState('', document.title, window.location.origin + window.location.pathname + window.location.search);
+    }
+  });
+  
+  /**
+  * another way to skin the same cat 
+  *
+  * $('.links').click(function(e){ 
+  *	 $('html, body').animate({
+  *   scrollTop: $( $.attr(this, 'href') ).offset().top - $('.nav').height()
+  *	 }, 1000);
+  *  return false;
+  * });
+  */
+  </script>
 
 <body class="index-page">
 
@@ -45,21 +79,21 @@
         <!-- Uncomment the line below if you also wish to use an image logo -->
         <img src="Accelbiz Logo_Final PNG (1).png" alt=""> 
 
-        <h1  class="sitename">Accelbiz Fintech</h1>
+        <h1  id="sitename" class="sitename">Accelbiz Fintech</h1>
         
       </a>
 
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a href="#hero" class="active">Home</a></li>
+          <li><a href="./index" class="active">Home</a></li>
           <li><a href="./About-Us">About</a></li>
           <li><a href="#features">Features</a></li>
           <li class="dropdown"><a href="#services"><span>Services</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
-              <li><a href="Digi-Solutions.html">Digi Solutions</a></li>
-              <li><a href="Legal-and-Compliance.html">Legal and Compliance</a></li>
-              <li><a href="Back-Office.html">Back Office Solutions</a></li>
-              <li><a href="Robotic-Process-Automation.html">Robotic Process Automation</a></li>
+              <li><a href="./Digi-Solutions">Digi Solutions</a></li>
+              <li><a href="./Legal-and-Compliance">Legal and Compliance</a></li>
+              <li><a href="./Back-Office">Back Office Solutions</a></li>
+              <li><a href="./Robotic-Process-Automation">Robotic Process Automation</a></li>
             </ul>
           </li>
           
@@ -67,7 +101,7 @@
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
 
-      <a class="btn-getstarted" href="index.html#contact">Contact</a>
+      <a class="btn-getstarted" href="#contact">Contact Us</a>
 
     </div>
   </header>
@@ -658,8 +692,8 @@
         <div class="col-lg-2 col-md-3 footer-links">
           <h4>Useful Links</h4>
           <ul>
-            <li><a href="#hero">Home</a></li>
-            <li><a href="#about">About us</a></li>
+            <li><a href="./index">Home</a></li>
+            <li><a href="./About-Us">About us</a></li>
             <li><a href="#features">Features</a></li>
             <li><a href="#services">Services</a></li>
             
@@ -669,10 +703,10 @@
         <div class="col-lg-2 col-md-3 footer-links">
           <h4>Our Services</h4>
           <ul>
-            <li><a href="Digi-Solutions.html">Digi Solutions</a></li>
-            <li><a href="Legal-and-Compliance.html">Legal and Compliance</a></li>
-            <li><a href="Back-Office.html">Back Office Solutions</a></li>
-            <li><a href="Robotic-Process-Automation.html">RPA Services</a></li>
+            <li><a href="./Digi-Solutions">Digi Solutions</a></li>
+            <li><a href="./Legal-and-Compliance">Legal and Compliance</a></li>
+            <li><a href="./Back-Office">Back Office Solutions</a></li>
+            <li><a href="./Robotic-Process-Automation">RPA Services</a></li>
             
           </ul>
         </div>

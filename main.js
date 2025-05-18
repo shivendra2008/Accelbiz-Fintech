@@ -173,4 +173,4 @@
   document.addEventListener('scroll', navmenuScrollspy);
 
 })();
-console.log("Developed By Shiv Media")
+console.log("Developed By Shiv Media(Shivendra Sontakke)")

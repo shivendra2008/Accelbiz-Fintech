@@ -5,8 +5,16 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <title>Accelbiz Fintech</title>
-  <meta name="description" content="Accelbiz Fintech is supported by industry experts, we are a Business Processes Solutioning fintech setup utilizing Technology to deliver seamless services to corporates and institutions">
-  <meta name="keywords" content="Accelbiz Fintech, Fintech, NBFCs,NBFC,BPO">
+  <meta name="description" content="Accelbiz delivers cutting-edge fintech and digital transformation services for startups and enterprises seeking innovation and growth.">
+  <meta name="robots" content="index, follow">
+  <meta name="keywords" content="Accelbiz Fintech, Fintech, NBFCs,NBFC,BPO,fintech solutions examples,fintech solutions pvt ltd,fintech solutions in india,fintech solutions reviews,fintech solutions for banks,fintech solutions pvt ltd mumbai,fintech solutions pune,fintech solutions bangalore,">
+  <meta property="og:title" content="Accelbiz Fintech">
+  <meta property="og:description" content="Accelbiz Fintech is supported by industry experts, we are a Business Processes Solutioning fintech setup utilizing Technology to deliver seamless services to corporates and institutions.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.accelbiz.in">
+  <meta property="og:image" content="https://accelbiz.in/Accelbiz%20Logo%20jpg.png">
+  <link rel="canonical" href="https://accelbiz.in/" />
+
 
   <!-- Favicons -->
   <link href="Accelbiz Logo_Final PNG (1).png" rel="icon">
@@ -35,10 +43,50 @@
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
 </head>
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Accelbiz",
+    "url": "https://accelbiz.in",
+    "logo": "https://accelbiz.in/Accelbiz%20Logo%20jpg.png",
+    
+  }
+  </script>
 <!-- F’in sweet Webflow Hacks -->
-
+<script>
+  // when the DOM is ready
+  $(document).ready(function() {
+    // get the anchor link buttons
+    const menuBtn = $('.hack15-menu-button');
+    // when each button is clicked
+    menuBtn.click(()=>{	
+      // set a short timeout before taking action
+      // so as to allow hash to be set
+      setTimeout(()=>{
+        // call removeHash function after set timeout
+        removeHash();
+      }, 5); // 5 millisecond timeout in this case
+    });
   
- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    // removeHash function
+    // uses HTML5 history API to manipulate the location bar
+    function removeHash(){
+      history.replaceState('', document.title, window.location.origin + window.location.pathname + window.location.search);
+    }
+  });
+  
+  /**
+  * another way to skin the same cat 
+  *
+  * $('.links').click(function(e){ 
+  *	 $('html, body').animate({
+  *   scrollTop: $( $.attr(this, 'href') ).offset().top - $('.nav').height()
+  *	 }, 1000);
+  *  return false;
+  * });
+  */
+  </script>
 
 <body class="index-page">
 
@@ -704,7 +752,6 @@
   <script src="glightbox.min.js"></script>
   <script src="swiper-bundle.min.js"></script>
   <script src="purecounter_vanilla.js"></script>
- 
 
   <!-- Main JS File -->
   <script src="main.js"></script>

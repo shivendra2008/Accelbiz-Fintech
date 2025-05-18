@@ -5,7 +5,7 @@
 * Author: BootstrapMade.com
 * License: https://bootstrapmade.com/license/
 */
-console.log(Developed By Shiv Media)
+console.log("Developed By Shiv Media")
 (function() {
   "use strict";
 

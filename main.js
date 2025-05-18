@@ -4,9 +4,7 @@
 * Updated: Nov 12 2024 with Bootstrap v5.3.3
 * Author: BootstrapMade.com
 * License: https://bootstrapmade.com/license/
-*/
-console.log("Developed By Shiv Media")
-(function() {
+*/(function() {
   "use strict";
 
   /**
@@ -175,3 +173,4 @@ console.log("Developed By Shiv Media")
   document.addEventListener('scroll', navmenuScrollspy);
 
 })();
+console.log("Developed By Shiv Media")

@@ -1,0 +1,78 @@
+{
+    "short_name": "Accelbiz Fintech",
+    "name": "Accelbiz Fintech Pvt. ltd.",
+    "description": "Accelbiz delivers cutting-edge fintech and digital transformation services for startups and enterprises seeking innovation and growth.",
+    "icons": [
+      {
+        "src": "/accelbizlogo512.png",
+        "type": "image/svg+xml",
+        "sizes": "512x512"
+      },
+      {
+        "src": "/accelbizlogo192",
+        "type": "image/png",
+        "sizes": "192x192"
+      },
+      {
+        "src": "/accelbizlogo512",
+        "type": "image/png",
+        "sizes": "512x512"
+      },
+      {
+        "src": "/accelbiz144x144.png",
+        "type": "image/png",
+        "sizes": "144x144"
+      }
+      
+    ],
+    "id": "/?source=pwa",
+    "start_url": "accelbiz.in",
+    "background_color": "#3367D6",
+    "display": "fullscreen",
+    "scope": "/",
+    "theme_color": "#ffffff",
+    "screenshots": [
+    
+    {
+        "src": "/ss1280.png",
+      "sizes": "1280x720",
+      "type": "image/png",
+        "form_factor": "wide",
+        "label": "Home screen showing main navigation and featured content"
+      },
+    {
+      "src": "/ss12801.png",
+      "type": "image/jpg",
+      "sizes": "1280x720",
+      "form_factor": "wide",
+      "label": "Home screen showing Our Expertise details"
+    },
+    {
+        "src": "/1.png",
+        "type": "image/jpg",
+        "sizes": "540x720",
+        "form_factor": "narrow",
+        "label": "Home screen showing main navigation and featured content"
+      },
+      {
+        "src": "/2.png",
+        "type": "image/jpg",
+        "sizes": "540x720",
+        "form_factor": "narrow"
+      },
+      {
+        "src": "/3.png",
+        "type": "image/jpg",
+        "sizes": "540x720",
+        "form_factor": "narrow"
+      },
+      {
+        "src": "/4.png",
+        "type": "image/jpg",
+        "sizes": "540x720",
+        "form_factor": "narrow"
+      }
+      
+]
+    
+  }

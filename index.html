@@ -14,6 +14,11 @@
   <meta property="og:url" content="https://www.accelbiz.in">
   <meta property="og:image" content="https://accelbiz.in/Accelbiz%20Logo%20jpg.png">
   <link rel="canonical" href="https://accelbiz.in/" />
+  <meta name="theme-color" media="(prefers-color-scheme: light)" content="white">
+  <meta name="theme-color" media="(prefers-color-scheme: dark)"  content="white">
+  <script src="manifest.json"></script>
+ 
+
 
 
   <!-- Favicons -->
@@ -54,39 +59,7 @@
   }
   </script>
 <!-- F’in sweet Webflow Hacks -->
-<script>
-  // when the DOM is ready
-  $(document).ready(function() {
-    // get the anchor link buttons
-    const menuBtn = $('.hack15-menu-button');
-    // when each button is clicked
-    menuBtn.click(()=>{	
-      // set a short timeout before taking action
-      // so as to allow hash to be set
-      setTimeout(()=>{
-        // call removeHash function after set timeout
-        removeHash();
-      }, 5); // 5 millisecond timeout in this case
-    });
-  
-    // removeHash function
-    // uses HTML5 history API to manipulate the location bar
-    function removeHash(){
-      history.replaceState('', document.title, window.location.origin + window.location.pathname + window.location.search);
-    }
-  });
-  
-  /**
-  * another way to skin the same cat 
-  *
-  * $('.links').click(function(e){ 
-  *	 $('html, body').animate({
-  *   scrollTop: $( $.attr(this, 'href') ).offset().top - $('.nav').height()
-  *	 }, 1000);
-  *  return false;
-  * });
-  */
-  </script>
+
 
 <body class="index-page">
 
@@ -443,10 +416,14 @@
           <div class="col-xl-3 col-md-6" data-aos="zoom-in" data-aos-delay="200">
             <div class="feature-box blue">
               <i class="bi bi-person-vcard"></i>
-              <h4>HR & Payroll Services</h4>
+              <h4>Hr, Learning 
+                Development 
+                and training</h4>
               <ul>
-                <li>End-to-end payroll processing and compliance</li>
-                <li>HR analytics and reporting</li>
+                <li>HR Support</li>
+                <li>Interpersonal Skills</li>
+                <li>Ethical Conduct</li>
+                <li>Functional Expertise</li>
               </ul>
               <p style="font-style: italic;">And much more....</p>
             </div>

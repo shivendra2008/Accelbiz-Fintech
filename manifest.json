@@ -26,7 +26,7 @@
       
     ],
     "id": "/?source=pwa",
-    "start_url": "accelbiz.in",
+    "start_url": "accelbiz.in/index",
     "background_color": "#3367D6",
     "display": "fullscreen",
     "scope": "/",

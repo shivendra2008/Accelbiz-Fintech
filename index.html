@@ -1,101 +1,51 @@
-<!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <title>Accelbiz Fintech</title>
-  <meta name="description" content="Accelbiz delivers cutting-edge fintech and digital transformation services for startups and enterprises seeking innovation and growth.">
-  <meta name="robots" content="index, follow">
-  <meta name="keywords" content="Accelbiz Fintech, Fintech, NBFCs,NBFC,BPO,fintech solutions examples,fintech solutions pvt ltd,fintech solutions in india,fintech solutions reviews,fintech solutions for banks,fintech solutions pvt ltd mumbai,fintech solutions pune,fintech solutions bangalore,">
-  <meta property="og:title" content="Accelbiz Fintech">
-  <meta property="og:description" content="Accelbiz Fintech is supported by industry experts, we are a Business Processes Solutioning fintech setup utilizing Technology to deliver seamless services to corporates and institutions.">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://www.accelbiz.in">
-  <meta property="og:image" content="https://accelbiz.in/Accelbiz%20Logo%20jpg.png">
-  <link rel="canonical" href="https://accelbiz.in/" />
-  <meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
-  <meta name="theme-color" media="(prefers-color-scheme: dark)"  content="#ffffff">
-  <link rel="manifest" href="/manifest.json">
- 
 
+  <!-- Existing CSS links -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
-
-  <!-- Favicons -->
-  <link href="Accelbiz Logo_Final PNG (1).png" rel="icon">
-  <link href="Accelbiz Logo_Final PNG (1).png" rel="apple-touch-icon">
-
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com" rel="preconnect">
-  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-
-  <!-- Vendor CSS Files -->
-  <link href="bootstrap.min.css" rel="stylesheet">
-  <link href="bootstrap-icons.css" rel="stylesheet">
-  <link href="aos.css" rel="stylesheet">
-  <link href="glightbox.min.css" rel="stylesheet">
-  <link href="swiper-bundle.min.css" rel="stylesheet">
-
-  <!-- Main CSS File -->
-  <link href="main.css" rel="stylesheet">
-
-  <!-- =======================================================
-  * Template Name: iLanding
-  * Template URL: https://bootstrapmade.com/ilanding-bootstrap-landing-page-template/
-  * Updated: Nov 12 2024 with Bootstrap v5.3.3
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
+  <!-- Your main stylesheet (updated below) -->
+  <link href="assets/css/main.css" rel="stylesheet">
 </head>
-<script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "Accelbiz",
-    "url": "https://accelbiz.in",
-    "logo": "https://accelbiz.in/Accelbiz%20Logo%20jpg.png"
-    
-  }
-  </script>
-<!-- F’in sweet Webflow Hacks -->
+<body>
 
+  <!-- Header -->
+  <header id="header" class="header d-flex align-items-center sticky-top">
+    <div class="container header-container d-flex align-items-center justify-content-between">
 
-<body class="index-page">
-
-  <header id="header" class="header d-flex align-items-center fixed-top">
-    <div class="header-container container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
-      
-      <a href="./" class="logo d-flex align-items-center me-auto me-xl-0">
-        <!-- Uncomment the line below if you also wish to use an image logo -->
-        <img src="Accelbiz Logo_Final PNG (1).png" alt=""> 
-
-        <h1  id="sitename" class="sitename">Accelbiz Fintech</h1>
-        
+      <a href="#" class="logo d-flex align-items-center">
+        <img src="assets/img/logo.png" alt="">
+        <h1 class="sitename">Accelbiz Fintech</h1>
       </a>
 
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a href="./" class="active">Home</a></li>
-          <li><a href="./About-Us">About</a></li>
-          <li><a href="#features">Features</a></li>
-          <li class="dropdown"><a href="#services"><span>Services</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+          <li><a href="#hero" class="active">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li class="dropdown"><a href="#"><span>Services</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
             <ul>
-              <li><a href="./Digi-Solutions">Digi Solutions</a></li>
-              <li><a href="./Legal-and-Compliance">Legal and Compliance</a></li>
-              <li><a href="./Back-Office">Back Office Solutions</a></li>
-              <li><a href="./Robotic-Process-Automation">Robotic Process Automation</a></li>
+              <li><a href="#services">Digital & Fintech Solutions</a></li>
+              <li><a href="#services">Corporate Legal & Regulatory</a></li>
+              <li><a href="#services">Back Office & Ops</a></li>
+              <li><a href="#services">RPA & Automation</a></li>
             </ul>
           </li>
-          
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
 
-      <a class="btn-getstarted" href="#contact">Contact Us</a>
-
+      <a class="btn-getstarted" href="#contact">Get Started</a>
     </div>
   </header>
+
 
   <main class="main">
 
@@ -174,8 +124,8 @@
           <div class="col-xl-6" data-aos="fade-up" data-aos-delay="300">
             <div class="image-wrapper">
               <div class="images position-relative" data-aos="zoom-out" data-aos-delay="400">
-                <img src="about-5.webp" alt="Business Meeting" class="img-fluid main-image rounded-4">
-                <img src="about-2.webp" alt="Team Discussion" class="img-fluid small-image rounded-4">
+                <img src="about-5.webp.jpg" alt="Business Meeting" class="img-fluid main-image rounded-4">
+                <img src="about-2.jpg" alt="Team Discussion" class="img-fluid small-image rounded-4">
               </div>
               <div class="experience-badge floating">
                 <h3>15+ <span>Years</span></h3>
@@ -342,7 +292,7 @@
               <div>
                 <h3>Digi Solutions</h3>
                 <p>We offer advanced digital solutions to streamline operations, improve customer experience, and support financial and compliance with scalability, security, and efficiency</p>
-                <a href="./Digi-Solutions" class="read-more">Read More <i class="bi bi-arrow-right"></i></a>
+                <a href="Digi-Solutions.html" class="read-more">Read More <i class="bi bi-arrow-right"></i></a>
               </div>
             </div>
           </div><!-- End Service Card -->
@@ -355,7 +305,7 @@
               <div>
                 <h3>Legal and Compliance</h3>
                 <p>We provide tailored support for corporate legal and regulatory needs, ensuring seamless compliance and robust legal backing.</p>
-                <a href="./Legal-and-Compliance" class="read-more">Read More <i class="bi bi-arrow-right"></i></a>
+                <a href="Legal-and-Compliance.html" class="read-more">Read More <i class="bi bi-arrow-right"></i></a>
               </div>
             </div>
           </div><!-- End Service Card -->
@@ -368,7 +318,7 @@
               <div>
                 <h3>Back office Solutions</h3>
                 <p>We provide comprehensive operational support and automation solutions for the financial services industry, enhancing efficiency, compliance, and customer satisfaction.</p>
-                <a href="./Back-Office" class="read-more">Read More <i class="bi bi-arrow-right"></i></a>
+                <a href="Back-Office.html" class="read-more">Read More <i class="bi bi-arrow-right"></i></a>
               </div>
             </div>
           </div><!-- End Service Card -->
@@ -381,7 +331,7 @@
               <div>
                 <h3>Robotic Process Automation  </h3>
                 <p>We use automation to streamline tasks, improve accuracy, and boost efficiency. Our RPA services cut costs, reduce errors, and speed up processes.</p>
-                <a href="./Robotic-Process-Automation" class="read-more">Read More <i class="bi bi-arrow-right"></i></a>
+                <a href="service-details.html" class="read-more">Read More <i class="bi bi-arrow-right"></i></a>
               </div>
             </div>
           </div><!-- End Service Card -->
@@ -670,7 +620,7 @@
       <div class="row gy-4">
         <div class="col-lg-4 col-md-6 footer-about">
           
-          <a href="./" class="logo d-flex align-items-center">
+          <a href="index.html" class="logo d-flex align-items-center">
             <img src="Accelbiz Logo_Final PNG (1).png" alt=""> 
             <span class="sitename">Accelbiz Fintech</span>
             
@@ -687,7 +637,7 @@
         <div class="col-lg-2 col-md-3 footer-links">
           <h4>Useful Links</h4>
           <ul>
-            <li><a href="./">Home</a></li>
+            <li><a href="./index">Home</a></li>
             <li><a href="./About-Us">About us</a></li>
             <li><a href="#features">Features</a></li>
             <li><a href="#services">Services</a></li>
@@ -714,7 +664,7 @@
     </div>
 
     <div class="container copyright text-center mt-4">
-      <p>© <span>Copyright 2025</span> <strong class="px-1 sitename">Accelbiz Fintech Private Limited.</strong> <span>All Rights Reserved.</span></p>
+      <p>© <span>Copyright 2026</span> <strong class="px-1 sitename">Accelbiz Fintech Private Limited.</strong> <span>All Rights Reserved.</span></p>
       
     </div>
 

@@ -33,6 +33,11 @@
   <priority>0.80</priority>
 </url>
 <url>
+  <loc>https://accelbiz.in/PoSH-Training</loc>
+  <lastmod>2025-05-28T09:16:14+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
   <loc>https://accelbiz.in/Legal-and-Compliance</loc>
   <lastmod>2025-05-28T09:16:14+00:00</lastmod>
   <priority>0.80</priority>
@@ -62,8 +67,9 @@
   <lastmod>2025-05-28T09:16:14+00:00</lastmod>
   <priority>1.00</priority>
 </url>
+</url>
 <url>
-  <loc>https://accelbiz.in/service-details.html</loc>
+  <loc>https://accelbiz.in/PoSH-Training.html</loc>
   <lastmod>2025-05-28T09:16:14+00:00</lastmod>
   <priority>0.80</priority>
 </url>

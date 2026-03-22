@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Word to PDF - Accelbiz Tools</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Inter&family=Nunito&display=swap" rel="stylesheet">
+
+<script 
+  src="https://cdn.jsdelivr.net/npm/@ilovepdf/ilovepdf-js-browser@1.2.1/dist/ilovepdf.min.js"
+  onerror="window.libLoadError = true;">
+</script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/docx-preview@0.3.0/dist/docx-preview.min.js"></script>
+
+ <link rel="stylesheet" href="../css/wordtopdf.css">
+<link rel="stylesheet" href="../css/style.css">
+
+
+
+
+
+  <!-- Libraries -->
+<!-- JSZip (REQUIRED) -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+
+<!-- docx-preview -->
+<script src="https://cdn.jsdelivr.net/npm/docx-preview@0.3.0/dist/docx-preview.min.js"></script>
+
+<!-- html2pdf -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+
+
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<header class="navbar">
+  <div class="nav-container">
+    <div class="logo">
+      <img src="../assets/logo.png">
+      <span>Accelbiz Fintech</span>
+    </div>
+
+    <nav class="nav-links">
+      <a href="../index.html">Home</a>
+      <a href="#">Tools</a>
+    </nav>
+  </div>
+</header>
+
+
+<!-- TOOL PAGE -->
+<section class="hero-section">
+    <div class="container">
+        <div class="hero-grid">
+            <div class="hero-text">
+                <h1>Transform Documents <span class="highlight">Instantly.</span></h1>
+                <p>Convert your Word files to professional PDFs with perfect formatting. Fast, secure, and completely free.</p>
+                <div class="hero-illustration">
+    <svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="250" cy="250" r="200" fill="#f0f2ff" />
+        
+        <rect x="130" y="150" width="120" height="160" rx="10" fill="#fff" stroke="#6366f1" stroke-width="4" />
+        <path d="M155 190h70M155 220h70M155 250h40" stroke="#6366f1" stroke-width="4" stroke-linecap="round" />
+        <rect x="220" y="150" width="30" height="30" rx="5" fill="#6366f1" />
+        <text x="224" y="171" fill="white" font-family="Arial" font-weight="bold" font-size="8">Word</text>
+
+        <path d="M270 230h40l-10-10m10 10l-10 10" stroke="#e91e63" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+
+        <rect x="330" y="180" width="120" height="160" rx="10" fill="#fff" stroke="#e91e63" stroke-width="4" />
+        <rect x="420" y="180" width="30" height="30" rx="5" fill="#e91e63" />
+        <text x="424" y="201" fill="white" font-family="Arial" font-weight="bold" font-size="12">PDF</text>
+        <path d="M355 230h70M355 260h70M355 290h40" stroke="#e91e63" stroke-width="4" stroke-linecap="round" />
+        
+        <circle cx="120" cy="120" r="15" fill="#6366f1" opacity="0.2" />
+        <circle cx="400" cy="120" r="10" fill="#e91e63" opacity="0.2" />
+        <rect x="100" y="350" width="20" height="20" rx="4" fill="#6366f1" opacity="0.1" transform="rotate(20)" />
+    </svg>
+</div>
+            </div>
+
+            <div class="hero-upload-card">
+                <div id="drop-area">
+                    <div class="upload-content">
+                        <div class="icon-circle">
+                            <i class="upload-icon">📄</i>
+                        </div>
+                        <h3>Upload Word File</h3>
+                        <p>Drag and drop or click to browse</p>
+                        <button type="button" id="uploadBtn">Choose File</button>
+                        <input type="file" id="fileInput" accept=".docx" style="display: none;">
+                    </div>
+                    
+                    <div id="file-info" style="display: none;">
+                        <div class="file-details">
+                            <span id="file-name"></span>
+                            <span id="file-size"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="progress-container" style="display: none;">
+                    <p id="progress-text">Ready to Convert</p>
+                    <div class="progress-track">
+                        <div id="dynamic-bar"></div>
+                    </div>
+                </div>
+
+                <button id="convertBtn" class="primary-btn" style="display: none;">
+                    Convert to PDF <i class="btn-icon">→</i>
+                </button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script src="../js/word.js"></script>
+
+<!-- FOOTER -->
+<footer id="footer" class="footer">
+
+    <div class="container footer-top">
+      <div class="row gy-4">
+        <div class="col-lg-4 col-md-6 footer-about">
+          
+          <a href="./" class="logo d-flex align-items-center">
+            <img src="/assets/logo.png" alt=""> 
+            <span class="sitename">Accelbiz Fintech</span>
+            
+          </a>
+
+          <div class="footer-contact pt-3">
+            
+            <p class="mt-3"><strong>CIN:</strong> <span>U62099MH2024PTC431259</span></p>
+            <p><strong>Email:</strong> <span>info@accelbiz.in</span></p>
+          </div>
+          
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Useful Links</h4>
+          <ul>
+            <li><a href="https://www.accelbiz.in/tools">Home</a></li>
+            <li><a href="https://www.accelbiz.in/About-Us">About us</a></li>
+            <li><a href="https://www.accelbiz.in#features">Features</a></li>
+            <li><a href="https://www.accelbiz.in#services">Services</a></li>
+            
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Our Tools</h4>
+          <ul>
+              <li><a href="./PoSH-Training">JPG to PNG</a></li>
+              <li><a href="./Student-Loan">PNG to JPG</a></li>              
+              <li><a href="./Digi-Solutions">Word to PDF</a></li>
+              <li><a href="./Legal-and-Compliance">PDF to Word</a></li>
+              <li><a href="./Back-Office">PDF Password Remover</a></li>
+              <li><a href="./Robotic-Process-Automation">PDF Manager</a></li>
+              <li><a href="./Robotic-Process-Automation">WEBP Converter</a></li>
+            </ul>
+        </div>
+
+        
+
+        
+
+      </div>
+    </div>
+
+    <div class="container copyright text-center mt-4">
+      <p>© <span>Copyright 2026</span> <strong class="px-1 sitename">Accelbiz Fintech Private Limited.</strong> <span>All Rights Reserved.</span></p>
+      
+    </div>
+
+  </footer>
+
+
+</body>
+</html>

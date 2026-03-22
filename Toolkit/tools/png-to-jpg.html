@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PNG to JPG - Accelbiz Fintech Tools</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Inter&family=Nunito&display=swap" rel="stylesheet">
+
+  <!-- Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="/css/jpgtopng.css">
+</head>
+
+<body>
+
+<!-- NAVBAR (same as index) -->
+<header class="navbar">
+  <div class="nav-container">
+    <div class="logo">
+      <img src="/assets/logo.png">
+      <span>Accelbiz Fintech</span>
+    </div>
+
+    <nav class="nav-links">
+      <a href="/index.html">Home</a>
+      <a href="#">Tools</a>
+    </nav>
+  </div>
+</header>
+
+<!-- TOOL SECTION -->
+<section class="tool-page">
+
+  <div class="tool-container">
+
+    <h1>PNG to JPG Converter</h1>
+    <p>Upload your PNG image and convert it instantly.</p>
+
+    <!-- DROP AREA -->
+    <div class="drop-area" id="drop-area">
+      <i class="bi bi-cloud-upload"></i>
+      <p>Drag & Drop your PNG file here</p>
+      <span>or</span>
+     <input type="file" id="fileInput" accept="image/png" hidden>
+      <button onclick="document.getElementById('fileInput').click()">Choose File</button>
+    </div>
+
+    <!-- LOADER -->
+<div class="loader" id="loader" style="display:none;">
+  <p>Converting...</p>
+
+  <div class="progress-bar">
+    <div class="progress" id="progress"></div>
+  </div>
+</div>
+
+<!-- PREVIEW -->
+<div class="preview-container" id="previewContainer" style="display:none;">
+  
+  <div class="preview-box">
+    <p>Original</p>
+    <img id="originalPreview">
+  </div>
+
+  <div class="preview-box">
+    <p>Converted</p>
+    <img id="convertedPreview">
+  </div>
+
+</div>
+
+    <!-- RESULT -->
+    <a id="downloadBtn" class="download-btn" style="display:none;">Download PNG</a>
+
+  </div>
+
+</section>
+
+<script src="/js/image.js"></script>
+</body>
+</html>

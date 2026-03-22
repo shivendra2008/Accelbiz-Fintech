@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Accelbiz Tools</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Inter&family=Nunito&display=swap" rel="stylesheet">
+
+  <!-- Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<header class="navbar">
+  <div class="nav-container">
+    <div class="logo">
+  <img src="assets/logo.png" alt="Accelbiz Logo">
+  <span>Accelbiz Fintech</span>
+</div>
+    <nav class="nav-links">
+      <a href="#">Home</a>
+      <a href="#">Tools</a>
+      <a href="#">Contact</a>
+    </nav>
+
+    <div class="hamburger" id="hamburger">
+      <i class="bi bi-list"></i>
+    </div>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-container">
+
+    <div class="hero-text">
+      <h1>
+        Smart File Tools <br>
+        by <span>Accelbiz Fintech</span>
+      </h1>
+      <p>Convert, edit and manage your files quickly and securely.</p>
+    </div>
+    <br>
+
+    <div class="hero-image">
+      <img src="assets/tools.svg" alt="Tools Illustration">
+    </div>
+
+  </div>
+</section>
+
+<!-- TOOLS -->
+<section class="tools">
+  <h2>All Tools</h2>
+
+  <div class="tools-grid">
+
+    <a href="tools/jpg-to-png.html" class="tool-card">
+      <i class="bi bi-image"></i>
+      <h4>JPG to PNG</h4>
+    </a>
+
+    <a href="tools/png-to-jpg.html" class="tool-card">
+      <i class="bi bi-image-alt"></i>
+      <h4>PNG to JPG</h4>
+    </a>
+
+    <a href="tools/word-to-pdf.html" class="tool-card">
+      <i class="bi bi-file-earmark"></i>
+      <h4>Word to PDF</h4>
+    </a>
+
+    <a href="tools/pdf-to-word.html" class="tool-card">
+      <i class="bi bi-file-earmark"></i>
+      <h4>PDF to Word</h4>
+    </a>
+
+    <a href="#" class="tool-card">
+      <i class="bi bi-file-lock"></i>
+      <h4>Remove PDF Password</h4>
+    </a>
+
+    <a href="#" class="tool-card">
+      <i class="bi bi-arrow-repeat"></i>
+      <h4>WebP Converter</h4>
+    </a>
+
+    <a href="#" class="tool-card">
+      <i class="bi bi-layers"></i>
+      <h4>PDF Page Manager</h4>
+    </a>
+
+  </div>
+</section>
+
+<script>
+const hamburger = document.getElementById("hamburger");
+const navLinks = document.querySelector(".nav-links");
+
+hamburger.addEventListener("click", () => {
+  navLinks.classList.toggle("active");
+});
+</script>
+
+</body>
+</html>
